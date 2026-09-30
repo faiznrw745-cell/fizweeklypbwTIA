@@ -1,12 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>User Profile</title>
-</head>
-<body>
-    <h1>User Profile</h1>
-    <p>This is the user profile page.</p>
-</body>
-</html>
+@extends('layouts.main')
+
+@section('content')
+    
+        <h1>Halaman Profile</h1>
+        <p>Nama : {{ $name }}</p>
+        <p>NIM : {{ $nim }}</p>
+        <p>Prodi : {{ $prodi }}</p>
+        <img src="images/{{ $gambar }}" width="200px" height="200px" alt="Profile Picture">
+    
+@endsection
